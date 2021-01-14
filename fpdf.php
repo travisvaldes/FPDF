@@ -469,6 +469,11 @@ function AddFont($family, $style='', $file='')
 	$this->fonts[$fontkey] = $info;
 }
 
+function SetFontPath($fontpath)
+{
+	$this->fontpath = $fontpath;
+}
+
 function SetFont($family, $style='', $size=0)
 {
 	// Select a font; size given in points
