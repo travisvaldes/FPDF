@@ -472,6 +472,9 @@ function AddFont($family, $style='', $file='')
 function SetFontPath($fontpath)
 {
 	$this->fontpath = $fontpath;
+
+	if (substr($this->fontpath, -1) != '/' && substr($this->fontpath, -1) != '\\')
+		$this->fontpath .= '/';
 }
 
 function SetFont($family, $style='', $size=0)
